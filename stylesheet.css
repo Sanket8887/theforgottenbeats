@@ -1,0 +1,158 @@
+/* font-family: "Open Sans", sans-serif; */
+/* font-family: "Dancing Script", cursive; */
+/* font-family: "AR One Sans", sans-serif; */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #000;
+    margin: 0;
+}
+
+
+
+.logo {
+    font-family: "AR One Sans", sans-serif;
+    color: #31C48D;
+
+}
+
+@media (min-width: 768px) {
+    .logo {
+        font-size: 2.5vw;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 10vw;
+    }
+}
+
+
+
+@keyframes slogan-animation-laptop {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+
+
+
+.slogan {
+    color: #ADBFB8;
+    font-family: "Dancing Script", cursive;
+    font-weight: 100;
+    margin-left: 10%;
+}
+
+
+@media (min-width: 768px) {
+    .slogan {
+        font-size:1.2vw;
+        animation-name: slogan-animation-laptop;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan {
+        /* font-size: 10vw; */
+    }
+}
+
+
+.slogan-disappear{
+    color: white;
+    /* margin-top: 10%; */
+}
+
+
+
+.heading {
+    position: fixed;
+    width: 100%;
+    background-color: #398378;
+    margin: 0;
+    padding: 1%;
+}
+
+.music_app_buttons {
+    font-size: 1.2vw;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    margin-top: 1%;
+    margin-right: 3%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.music_app_buttons a {
+    margin: 1.5%;
+    display: flex; /* Make the anchor tags use flexbox */
+    align-items: cener; /* Align text and SVG icons vertically */
+    padding: 5px 10px; /* Add some padding for better spacing */
+    white-space: nowrap;
+}
+
+
+.spotify_music_button {
+    border: 1px solid #00DA5A;
+    border-radius: 10px;
+    background-color: #00DA5A;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+.apple_music_button {
+    border: 1px solid #FB5C74;
+    border-radius: 10px;
+    background-color: #FB5C74;
+    padding: 5px;
+    text-decoration: none;
+
+}
+
+
+.spotify_music_button svg {
+    margin-right: 1px;
+}
+
+
+a.spotify_music_button:link,
+a.spotify_music_button:visited,
+a.apple_music_button:link,
+a.apple_music_button:visited {
+    color: white;
+}
+
+/* mouse over link */
+a.spotify_music_button:hover {
+    background-color: #1db954;
+    border: 1px solid #1db954;
+
+}
+
+a.apple_music_button:hover {
+    background-color: #f94661;
+    border: 1px solid #f94661;
+
+}
+
